@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact 4.6</title>
+    <style>
+        /* Глобальні стилі */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto auto;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 5px;
+            height: 100vh;
+        }
+
+        /* Шапка сайту */
+        .header {
+            grid-column: 1 / 4;
+            background-color: #add8e6;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+        }
+
+        /* Меню (зліва) */
+        .menu {
+            grid-column: 1;
+            grid-row: 2 / 5;
+            background-color: #ffe4c4;
+            padding: 15px;
+        }
+
+        .menu h2 {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu li {
+            margin-bottom: 8px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Основний контент */
+        .content {
+            grid-column: 2;
+            grid-row: 2 / 5;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+        }
+
+        /* Правий блок */
+        .right-sidebar {
+            grid-column: 3;
+            grid-row: 2 / 5;
+            background-color: #ffe4c4;
+            padding: 15px;
+        }
+
+        .right-sidebar h2 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .right-sidebar p {
+            margin-bottom: 8px;
+        }
+
+        /* Нижні блоки */
+        .footer-left {
+            grid-column: 1;
+            background-color: #e0f8d8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            grid-column: 2;
+            background-color: #add8e6;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer-right {
+            grid-column: 3;
+            background-color: #e0f8d8;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <div class="header">
+            <h1>Genshin Impact – Версія 4.6: Нові горизонти Тейвату</h1>
+        </div>
+
+        <!-- Ліве меню -->
+        <div class="menu">
+            <h2>Меню</h2>
+            <ul>
+                <li><a href="#">Про оновлення</a></li>
+                <li><a href="#">Нові персонажі</a></li>
+                <li><a href="#">Події</a></li>
+                <li><a href="#">Галерея</a></li>
+            </ul>
+        </div>
+
+        <!-- Основний контент -->
+        <div class="content">
+            <img src="https://upload-os-bbs.mihoyo.com/upload/2024/04/20/genshin-impact-4-6-banner.jpg" alt="Genshin Impact 4.6">
+        </div>
+
+        <!-- Правий блок -->
+        <div class="right-sidebar">
+            <h2>Новини</h2>
+            <p>🔹 Відкрито новий регіон у Sumeru.</p>
+            <p>🔹 Доступні нові банери персонажів!</p>
+            <p>🔹 Подорожі продовжуються у 4.6.</p>
+        </div>
+
+        <!-- Нижній лівий блок -->
+        <div class="footer-left">
+            <p>🔗 <a href="#">Політика конфіденційності</a></p>
+        </div>
+
+        <!-- Центральний нижній блок -->
+        <div class="footer">
+            <p>© 2024 Genshin Impact Fanpage</p>
+        </div>
+
+        <!-- Нижній правий блок -->
+        <div class="footer-right">
+            <p>📧 <a href="mailto:support@genshin.com">Зв'яжіться з нами</a></p>
+        </div>
+    </div>
+</body>
+</html>
