@@ -1,0 +1,53 @@
+# user_story_1: Warehouse Manager Processes Orders
+# Function to simulate order processing by the Warehouse Manager
+
+def process_order(order_id, warehouse_status):
+    """
+    Simulates processing of an order in the warehouse.
+    :param order_id: ID of the order to process
+    :param warehouse_status: Status of the warehouse (e.g., 'in-stock', 'out-of-stock')
+    :return: Result of processing
+    """
+    if warehouse_status == 'in-stock':
+        return f"Order {order_id} has been successfully processed and is ready for delivery."
+    else:
+        return f"Order {order_id} cannot be processed due to insufficient stock."
+
+# Example usage:
+# print(process_order(12345, 'in-stock'))
+
+
+# user_story_2: Delivery Manager Handles Delivery Assignments
+# Function to assign a delivery driver to an order
+
+def assign_delivery(order_id, driver_name):
+    """
+    Assigns a driver to an order.
+    :param order_id: ID of the order
+    :param driver_name: Name of the driver
+    :return: Assignment confirmation
+    """
+    return f"Order {order_id} has been assigned to driver {driver_name}."
+
+# Example usage:
+# print(assign_delivery(12345, 'John Doe'))
+
+
+# user_story_3: Sales Manager Tracks Order Payments
+# Function to record and validate order payment
+
+def record_payment(order_id, payment_amount, total_due):
+    """
+    Records payment for an order and checks if it is complete.
+    :param order_id: ID of the order
+    :param payment_amount: Amount paid
+    :param total_due: Total amount due
+    :return: Payment status
+    """
+    if payment_amount >= total_due:
+        return f"Payment for Order {order_id} is complete. Change: {payment_amount - total_due:.2f}."
+    else:
+        return f"Payment for Order {order_id} is incomplete. Remaining due: {total_due - payment_amount:.2f}."
+
+# Example usage:
+# print(record_payment(12345, 100.0, 150.0))
